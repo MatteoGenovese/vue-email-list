@@ -21,8 +21,8 @@
 
     <div id="app">
 
-        <ol>
-            <li v-if="generationHasFinished()" v-for="(contact,index) in contacts">
+        <ol v-if="generationHasFinished()">
+            <li v-for="(contact,index) in contacts">
                 {{getContact(index)}}
             </li>
         </ol>
